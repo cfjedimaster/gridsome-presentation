@@ -1,0 +1,32 @@
+Generates websites, apps(?), and PWAs
+
+features:
+static web sites, using a vue front end, that can then be deployed anywhere
+local dev w/ hot reload
+automatic routing by file name
+dynamic routing by using [X]
+lets you use API/random data
+graphql to work with data (not required)
+
+Core:
+	Pages
+	Collections (data) - available via GraphQL
+	Templates - show one page of a Collection
+
+
+runs on node
+
+
+gridsome -h, different based on path
+
+ability to output N pages
+progressive image support - it also resizes and crops
+
+questions: how would i add vue code for the front end only?
+is there a bare option?
+
+https://twitter.com/gridsome
+
+https://gridsome.org/plugins/gridsome-plugin-service-worker
+
+https://jamstackthemes.dev/#ssg=gridsome
