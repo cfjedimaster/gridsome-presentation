@@ -1,352 +1,483 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>An Introduction to Gridsome</title>
+    <title>An Introduction to Gridsome</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<style>
-		.twocol {
-			display: grid;
-			grid-template-columns: 75% 25%;
-		}
-		</style>
+    <style>
+    .twocol {
+      display: grid;
+      grid-template-columns: 75% 25%;
+    }
+    </style>
 
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>An Introduction to Gridsome</h1>
-				</section>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>An Introduction to Gridsome</h1>
+        </section>
 
-				<section>
-					<h2>read.me</h2>
-					<div class="twocol">
-					<ul>
-						<li>Lead Developer Evangelist for HERE</li>
-						<li>Enterprise Cat Demo Builder</li>
-						<li>Second best "Just Dance 2019" player (in my house)</li>
-						<li>Web: www.raymondcamden.com</li>
-						<li>Twitter: @raymondcamden</li>
-					</ul>
-					<img src="img/ray.jpg" style="float:right;">
-					</div>
-				</section>
+        <section>
+          <h2>Raymond Camden</h2>
+          <div class="twocol">
+          <ul>
+            <li>Lead Developer Evangelist for HERE</li>
+            <li>Enterprise Cat Demo Builder</li>
+            <li>Second best "Just Dance 2019" player (in my house)</li>
+            <li>Web: www.raymondcamden.com</li>
+            <li>Twitter: @raymondcamden</li>
+          </ul>
+          <img src="img/ray.jpg" style="float:right;">
+          </div>
+        </section>
 
-				<section>
-					<h2>Gameplan</h2>
-					<ul>
-						<li class="fragment">Summary</li>
-						<li class="fragment">Demo</li>
-						<li class="fragment">What</li>
-						<li class="fragment">How</li>
-						<li class="fragment">Help</li>
-					</ul>
-				</section>
+        <section>
+          <h2>Gameplan</h2>
+          <ul>
+            <li class="fragment">Summary</li>
+            <li class="fragment">Demo</li>
+            <li class="fragment">What</li>
+            <li class="fragment">How</li>
+            <li class="fragment">Help</li>
+          </ul>
+        </section>
 
-				<section>
-				<h1>Summary</h1>
-				</section>
-	
-				<section>
-				<h1>Demo</h1>
-				</section>
+        <section>
+        <h1>Summary</h1>
+        </section>
+  
+        <section>
+        <h1>Demo</h1>
+        </section>
 
-				<section>
-				<h1>What</h1>
-				</section>
-	
-				<section>
-				<h2>What is Gridsome?</h2>
-				<ul>
-				<li class="fragment">Static Site Generator</li>
-				<li class="fragment">Turns into a Vue SPA</li>
-				<li class="fragment">Can be used for sites, apps, PWAs</li>
-				<li class="fragment">Powered by GraphQL</li>
-				<li class="fragment">gridsome.org</li>
-				</ul>
-				</section>
-	
-				<section>
-				<h2>Pre-reqs</h2>
-				<ul>
-				<li class="fragment">Vue</li>
-				<li class="fragment">GraphQL</li>
-				<li class="fragment">"Knowing how GraphQL works is a plus, but not required. Gridsome is a great way to learn it."</li>
-				</ul>
-				</section>
+        <section>
+        <h1>What</h1>
+        </section>
+  
+        <section>
+        <h2>What is Gridsome?</h2>
+        <ul>
+        <li class="fragment">Static Site Generator</li>
+        <li class="fragment">Turns into a Vue SPA</li>
+        <li class="fragment">Can be used for sites, apps, PWAs</li>
+        <li class="fragment">Powered by GraphQL</li>
+        <li class="fragment">gridsome.org</li>
+        </ul>
+        </section>
+  
+        <section>
+        <h2>Pre-reqs</h2>
+        <ul>
+        <li class="fragment">Vue</li>
+        <li class="fragment">GraphQL</li>
+        <li class="fragment">"Knowing how GraphQL works is a plus, but not required. Gridsome is a great way to learn it."</li>
+        </ul>
+        </section>
 
-				<section>
-				<h1>How</h1>
-				</section>
+        <section>
+        <h1>How</h1>
+        </section>
 
-				<section>
-				<h2>Installation</h2>
-				<pre><code data-trim class="bash">
-					npm install --global @gridsome/cli
-				</code></pre>
-				</section>
+        <section>
+        <h2>Installation</h2>
+        <pre><code data-trim class="bash">
+          npm install --global @gridsome/cli
+        </code></pre>
+        </section>
 
-				<section>
-				<h2>New Project</h2>
-				<pre><code data-trim class="bash">
-				gridsome create something
-				cd something
-				gridsome develop
-				</code></pre>
-				</section>
+        <section>
+        <h2>New Project</h2>
+        <pre><code data-trim class="bash">
+        gridsome create something
+        cd something
+        gridsome develop
+        </code></pre>
+        </section>
 
-				<section>
-				<h2>Publish Project</h2>
-				<pre><code data-trim class="bash">
-				gridsome build
-				</code></pre>
-				<p>
-				Your site is now available at <code>dist</code>!
-				</p>
-				</section>
+        <section>
+        <h2>Publish Project</h2>
+        <pre><code data-trim class="bash">
+        gridsome build
+        </code></pre>
+        <p>
+        Your site is now available at <code>dist</code>!
+        </p>
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					Just generate a site, build it, deploy it to zeit? 
-				</aside>
-				</section>
-	
-				<section>
-				<h2>Pages</h2>
-				<ul>
-				<li class="fragment">Single File Components</li>
-				<li class="fragment">Automatic Routing</li>
-				<li class="fragment">vue-meta included</li>
-				<li class="fragment">Can be made dynamically too</li>
-				</ul>
-				<pre class="fragment"><code data-trim class="bash">
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          Just generate a site, build it, deploy it to zeit? 
+        </aside>
+        </section>
+  
+        <section>
+        <h2>Pages</h2>
+        <ul>
+        <li class="fragment">Single File Components</li>
+        <li class="fragment">Automatic Routing</li>
+        <li class="fragment">vue-meta included</li>
+        <li class="fragment">Can be made dynamically too</li>
+        </ul>
+        <pre class="fragment"><code data-trim class="bash">
 pages/Foo.vue becomes /foo
 pages/Foo/Index.vue becomes /foo
 pages/Foo/Goo.vue becomes /foo/goo
-				</code></pre>
-				</section>
+        </code></pre>
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					add a SFC with just template, 
-					do template and FORGET the wrap element, show error
-					no layout 
-					add style
-					add data
-					add title
-				</aside>
-				</section>
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          add a SFC with just template, 
+          do template and FORGET the wrap element, show error
+          no layout 
+          add style
+          add data
+          add title
+        </aside>
+        </section>
 
-				<section>
-					<h2>Linking</h2>
-					<ul>
-					<li class="fragment">Use &lt;g-link&gt;</li>
-					<li class="fragment">Wrapper for &lt;router-link&gt;</li>
-					<li class="fragment">Prefetch when link is in view</li>
-					<li class="fragment">Use a "regular" &lt;a&gt; for external links and anchors</li>
-					</ul>
-					<pre class="fragment"><code data-trim class="bash">
-						<g-link to="/cats">My Cats</g-link>
-					</code></pre>						
-				</section>
+        <section>
+          <h2>Linking</h2>
+          <ul>
+          <li class="fragment">Use &lt;g-link&gt;</li>
+          <li class="fragment">Wrapper for &lt;router-link&gt;</li>
+          <li class="fragment">Prefetch when link is in view</li>
+          <li class="fragment">Use a "regular" &lt;a&gt; for external links and anchors</li>
+          </ul>
+          <pre class="fragment"><code data-trim class="bash">
+            <g-link to="/cats">My Cats</g-link>
+          </code></pre>						
+        </section>
 
-				<section>
-					<h1>Demo</h1>
-				<aside class="notes">
-					g-link the new page back home
-				</aside>
-				</section>
-					
-				<section>
-				<h2>Layouts</h2>
-				<ul>
-				<li class="fragment">Wrap pages</li>
-				<li class="fragment">Can de declared globally or included in a page SFC</li>
-				<li class="fragment">Use &lt;slot /&gt; for the content</li>
-				<li class="fragment">Can have props!</li>
-				<li class="fragment">Can have multiple slots</li>
-				<li class="fragment">A "master" layout can be defined by adding App.vue</li>
-				</ul>
-				</section>
+        <section>
+          <h1>Demo</h1>
+        <aside class="notes">
+          g-link the new page back home
+        </aside>
+        </section>
+          
+        <section>
+        <h2>Layouts</h2>
+        <ul>
+        <li class="fragment">Wrap pages</li>
+        <li class="fragment">Can de declared globally or included in a page SFC</li>
+        <li class="fragment">Use &lt;slot /&gt; for the content</li>
+        <li class="fragment">Can have props!</li>
+        <li class="fragment">Can have multiple slots</li>
+        <li class="fragment">A "master" layout can be defined by adding App.vue</li>
+        </ul>
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					add a footer to Layout
-					add layout to ray
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          add a footer to Layout
+          add layout to ray
 show main.js for auto include
-				</aside>
-				</section>
+        </aside>
+        </section>
 
-				<section>
-				<h2>Components</h2>
-				<ul>
-				<li class="fragment">Put them in `src/components`</li>
-				<li class="fragment">Import them</li>
-				<li class="fragment">And that's it</li>
-				</ul>
-				</section>
+        <section>
+        <h2>Components</h2>
+        <ul>
+        <li class="fragment">Put them in <code>src/components</code></li>
+        <li class="fragment">Import them</li>
+        <li class="fragment">And that's it</li>
+        </ul>
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					add a Cat component
-				</aside>
-				</section>
-		
-				<section>
-				<h2>Data</h2>
-				<ul>
-				<li class="fragment">GraphQL server available during development</li>
-				<li class="fragment">Import data from different places</li>
-				<li class="fragment">Gridsome does a crap ton of stuff with it</li>
-				<li class="fragment">Use data in pages/components</li>
-				<li class="fragment">GraphQL Explorer automatically deployed</li>
-				</ul>
-				</section>
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          add a Cat component
+        </aside>
+        </section>
+    
+        <section>
+        <h2>Data</h2>
+        <ul>
+        <li class="fragment">GraphQL server available during development</li>
+        <li class="fragment">Import data from different places</li>
+        <li class="fragment">Gridsome does a crap ton of stuff with it</li>
+        <li class="fragment">Use data in pages/components</li>
+        <li class="fragment">GraphQL Explorer automatically deployed</li>
+        </ul>
+        </section>
 
-				<section>
-					<img src="img/import.png">
-					<p style="font-size:14px"><i>"Borrowed" from docs</i></p>
-				</section>
+        <section>
+          <img src="img/import.png">
+          <p style="font-size:14px"><i>"Borrowed" from docs</i></p>
+        </section>
 
-				<section>
-					<h2>Importing</h2>
-					<ul>
-						<li class="fragment">Importing from an API - built in</li>
-						<li class="fragment">Importing from anything else - plugin!</li>
-					</ul>
-				</section>
+        <section>
+          <h2>Importing</h2>
+          <ul>
+            <li class="fragment">Importing from an API - built in</li>
+            <li class="fragment">Importing from anything else - plugin!</li>
+          </ul>
+        </section>
 
-				<section>
-				<h2>Importing Dynamically</h2>
-				<ul>
-				<li class="fragment">Make use of <code>gridsome.server.js</code></li>
-				<li class="fragment">Hit your API (or whatever), make a collection, add to it</li>
-				<li class="fragment">That collection is part of your GraphQL store</li>
-				</ul>
-				</section>
+        <section>
+        <h2>Importing Dynamically</h2>
+        <ul>
+        <li class="fragment">Make use of <code>gridsome.server.js</code></li>
+        <li class="fragment">Hit your API (or whatever), make a collection, add to it</li>
+        <li class="fragment">That collection is part of your GraphQL store</li>
+        </ul>
+        </section>
 
-				<section>
-					<pre><code class="javascript" data-trim>
-						const axios = require('axios')
+        <section>
+          <pre><code class="javascript" data-trim>
+            const axios = require('axios')
 
-						module.exports = function (api) {
-						  api.loadSource(async actions => {
-							const { data } = await axios.get('https://api.example.com/posts')
-						
-							const collection = actions.addCollection({
-							  typeName: 'BlogPosts'
-							})
-						
-							for (const item of data) {
-							  collection.addNode({
-								id: item.id,
-								title: item.title
-							  })
-							}
-						  })
-						}
-					</code></pre>						
-				</section>
+            module.exports = function (api) {
+              api.loadSource(async actions => {
+              const { data } = await axios.get('https://api.example.com/posts')
+            
+              const collection = actions.addCollection({
+                typeName: 'BlogPosts'
+              })
+            
+              for (const item of data) {
+                collection.addNode({
+                id: item.id,
+                title: item.title
+                })
+              }
+              })
+            }
+          </code></pre>						
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					do SW source
-				</aside>
-				</section>
-	
-				<section>
-				<h2>Importing from Files</h2>
-				<ul>
-				<li class="fragment">Multiple options here, most likely <code>file-system</code></li>
-				<li class="fragment">Source files may require additional things (markdown)</li>
-				<li class="fragment">See my blog post: <a href="https://www.raymondcamden.com/2020/01/12/some-notes-on-building-blogs-with-gridsome" target="_new">Some Notes on Building Blogs with Gridsome</a></li>
-				</ul>
-				</section>
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          do SW source
+        </aside>
+        </section>
+  
+        <section>
+        <h2>Importing from Files</h2>
+        <ul>
+        <li class="fragment">Multiple options here, most likely <code>file-system</code></li>
+        <li class="fragment">Source files may require additional things (markdown)</li>
+        <li class="fragment">See my blog post: <a href="https://www.raymondcamden.com/2020/01/12/some-notes-on-building-blogs-with-gridsome" target="_new">Some Notes on Building Blogs with Gridsome</a></li>
+        </ul>
+        </section>
 
-				<section>
-				<h2>Markdown Specific Example</h2>
-				<ul>
-				<li class="fragment">Install the plugin: <code>npm i  @gridsome/source-filesystem</code></li>
-				<li class="fragment">Install a Markdown handlers: <code>npm i @gridsome/transformer-remark</code></li>
-				<li class="fragment">Define plugin options in <code>gridsome.config.js</code></li>
-				</ul>
-				</section>
+        <section>
+        <h2>Markdown Specific Example</h2>
+        <ul>
+        <li class="fragment">Install the plugin: <code>npm i  @gridsome/source-filesystem</code></li>
+        <li class="fragment">Install a Markdown handlers: <code>npm i @gridsome/transformer-remark</code></li>
+        <li class="fragment">Define plugin options in <code>gridsome.config.js</code></li>
+        </ul>
+        </section>
 
-				<section>
-				<pre><code class="javascript" data-trim>
+        <section>
+        <pre><code class="javascript" data-trim>
 module.exports = {
-	siteName: 'Gridsome',
-	plugins: [
-		{
-			use: '@gridsome/source-filesystem',
-			options: {
-				typeName: 'BlogPost',
-				path: 'blog/*.md'
-			}
-		}
-	]					  					  
+  siteName: 'Gridsome',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'BlogPost',
+        path: 'blog/*.md'
+      }
+    }
+  ]					  					  
 }
-				</code></pre>
-				</section>
+        </code></pre>
+        </section>
 
-				<section>
-				<h2>Templates</h2>
-				<ul>
-				<li class="fragment">Defines a path for a GraphQL collection</li>
-				<li class="fragment">Maps to a component with the same name under <code>templates/</code>
-				</ul>
-				</section>
+        <section>
+        <h2>Templates</h2>
+        <ul>
+        <li class="fragment">Defines a path for a GraphQL collection</li>
+        <li class="fragment">Maps to a component with the same name under <code>templates/</code>
+        </ul>
+        </section>
 
-				<section>
-				<h1>Demo</h1>
-				<aside class="notes">
-					show SW example of setting template, making the file, and the output
-				</aside>
-				</section>
-	
-			</div>
-		</div>
+        <section>
+        <h1>Demo</h1>
+        <aside class="notes">
+          show SW example of setting template, making the file, and the output
+          USE template_example
+        </aside>
+        </section>
 
-		<script src="js/reveal.js"></script>
+        <section>
+        <h2>Recap</h2>
+        <ul>
+        <li class="fragment">Import data into GraphQL</li>
+        <li class="fragment">Template defines a path for output and contents of files</li>
+        <li class="fragment">We aren't displaying the actual data!</li>
+        </ul>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash:true,
-				slideNumber:true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+        <section>
+        <h2>Querying Data</h2>
+        <ul>
+        <li class="fragment"><code>&lt;page-query&gt;</code></li>
+        <li class="fragment"><code>&lt;static-query&gt;</code></li>
+        </ul>
+        </section>
+
+        <section>
+          <h2>The Query</h2>
+          <pre><code data-trim class="html">
+<page-query>
+query {
+  posts: allWordPressPost {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+}
+</page-query>
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Using it</h2>
+          <pre><code data-trim class="html">
+<template>
+  <div>
+    <div v-for="edge in $page.posts.edges"
+    :key="edge.node.id">
+      <h2>{{ edge.node.title }}</h2>
+    </div>
+  </div>
+</template>
+          </code></pre>
+        </section>
+
+        <section>
+        <h2>Demo</h2>
+        <aside class="notes">
+          show page_query example, template too
+        </aside>
+        </section>
+
+        <section>
+          <h2>Another Recap</h2>
+          <ul>
+            <li class="fragment">You find and import your data</li>
+            <li class="fragment">You query your data</li>
+            <li class="fragment">You optionally define a template to "map" your data</li>
+          </ul>
+        </section>
+
+        <section>
+        <h2>More Stuff</h2>
+        <ul>
+        <li class="fragment">Dynamic Pages</li>
+        <li class="fragment">Images</li>
+        </ul>
+        </section>
+
+        <section>
+          <h2>Dynamic Pages</h2>
+          <ul>
+          <li class="fragment">Pages via JavaScript</li>
+          <li class="fragment">Without using GraphQL</li>
+          <li class="fragment">But can use GraphQL data</li>
+          <li class="fragment">Uses <code>createPages</code> and <code>createPage</code></li>
+          </ul>
+        </section>
+
+        <section>
+        <h2>Demo</h2>
+        <aside class="notes">
+          show dyn_page
+        </aside>
+        </section>
+  
+        <section>
+        <h2>Images</h2>
+        <ul>
+        <li class="fragment">Use &lt;g-image&gt;</li>
+        <li class="fragment">Automatically creates srcset versions and serves best for device</li>
+        <li class="fragment">Blurred Base64 version until in viewport (lazy loading)</li>
+        <li class="fragment">Built in resizing/cropping</li>
+        <li class="fragment">Only local images</li>
+        </ul>
+        </section>
+
+        <section>
+        <h2>Demo</h2>
+        <aside class="notes">
+          show img_test
+        </aside>
+        </section>
+  
+        <section>
+        <h2>But wait, There's more...</h2>
+        <ul>
+        <li class="fragment">Dynamic Routing</li>
+        <li class="fragment">Populating Head</li>
+        <li class="fragment">Client-side Data</li>
+        <li class="fragment">More and more (see docs)</li>
+        </ul>
+        </section>
+
+        <section>
+        <h1>Help</h1>
+        </section>
+
+        <section>
+        <h2>Finding Help</h2>
+        <ul>
+        <li class="fragment">Docs: https://gridsome.org/docs/</li>
+        <li class="fragment">Discord: https://discord.gg/daeay6n</li>
+        <li class="fragment">SO: https://stackoverflow.com/questions/tagged/gridsome</li>
+        </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash:true,
+        slideNumber:true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
