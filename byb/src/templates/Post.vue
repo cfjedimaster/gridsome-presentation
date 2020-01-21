@@ -144,7 +144,6 @@ query Post ($path: String) {
     description
     timeToRead
     cover
-    fullscreen
     author {
       id
       title
